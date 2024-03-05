@@ -40,7 +40,7 @@ const About = () => {
       emailRef.current.value = '';
       msgRef.current.value = '';
     }catch(error){
-     console.log('Error on message submit ::==> ', error);  
+     console.log('Error on message submit ::==> ', error);
     }
     showAlert('Message Sent!');
   }
@@ -78,9 +78,9 @@ const About = () => {
           <div className='text-sm py-2 text-blue-700' >For signed in users, email and name will be autofilled!</div>
           <div>
             <form onSubmit={handleSubmit} >
-            <input ref={nameRef} defaultValue={currentUser && currentUser.name.first +' '+ currentUser.name.last} className='my-2 w-full p-2 bg-blue-200 dark:bg-blue-950 border border-blue-600 focus:outline-none' type="text" placeholder='Name' />
-            <input ref={emailRef} defaultValue={ currentUser && currentUser.email} className='my-2 w-full p-2 bg-blue-200 dark:bg-blue-950 focus:outline-none border border-blue-600' type="email" required placeholder='Email' />
-            <textarea ref={msgRef}  className='my-2 w-full p-2 bg-blue-200 dark:bg-blue-950 line-none border border-blue-600' name="about-contact-msg" id="about-contact-msg" cols="30" rows="10" placeholder='Shoot...'></textarea>
+            <input required ref={nameRef} defaultValue={currentUser && currentUser.name.first +' '+ currentUser.name.last} className='my-2 w-full p-2 bg-blue-200 dark:bg-blue-950 border border-blue-600 focus:outline-none' type="text" placeholder='Name' />
+            <input required ref={emailRef} defaultValue={ currentUser && currentUser.email} className='my-2 w-full p-2 bg-blue-200 dark:bg-blue-950 focus:outline-none border border-blue-600' type="email" required placeholder='Email' />
+            <textarea required ref={msgRef}  className='my-2 w-full p-2 bg-blue-200 dark:bg-blue-950 line-none border border-blue-600' name="about-contact-msg" id="about-contact-msg" cols="30" rows="10" placeholder='Shoot...'></textarea>
             <div className='w-full flex justify-end'><button ref={bottomRef} className='bg-green-700 hover:bg-green-800 my-2 p-1 focus:outline-none w-20 text-green-200' >Send</button></div>
             </form>
           </div>
@@ -97,9 +97,9 @@ const About = () => {
             <div className='p-2 flex flex-col text-sm bg-gray-300 dark:bg-transparent dark:text-stone-300'>
               <span>Kushagra Sharma</span>
               <span>Ashirwad Garden, Rest House Road, Rajgarh, Alwar</span>
-              <span> <a href='mailto:TheDarkArtist@proton.me' >  TheDarkArtist@proton.me </a> | +917426072284</span>
+              <span> <a href='mailto:tda@thedarkartist.in' >  tda@thedarkartist.in </a> | +917426072284</span>
               <span>June 2, 2005</span>
-              <span>thedarkartist.github.io</span>
+              <span>TheDarkArtist.in</span>
               <span>LinkedIn TheDarkArtist</span>
             </div>
           </div>
@@ -113,18 +113,17 @@ const About = () => {
             <div className='border-blue-400 p-2 text-sm'>
               <ul className='list-disc pl-4 dark:text-stone-300' >
                 <div className='py-1 ' >
-                  <li>10<span className='align-super' >th</span> Class <span className='pl-4'>78%</span> <span className="pl-4">2017-2018</span></li>
+                  <li>10<span className='align-super' >th</span> Class  <span className="pl-4">2017-2018</span></li>
                   <p>Swami Ganga Bharti Sr. Sec. School, Rajgarh, Alwar</p>
                 </div>
 
                 <div className='py-1'>
-                  <li>12<span className='align-super' >th</span> Class <span className='pl-4' >56%</span> <span className="pl-4">2019-2020</span></li>
-                  <p>Swami Ganaga Bharti Sr. Sec. School, Rajgarh, Alwar</p>
-                  <p>[+] JEE Mains Prep from Resonance, Jaipur</p>
+                  <li>12<span className='align-super' >th</span> Class  <span className="pl-4">2019-2020</span></li>
+                  <p>JEE Mains Prep from Resonance, Jaipur</p>
                 </div>
 
                 <div className='py-1'>
-                  <li>B.Tech <span className="pl-4">7.2CGPA (pursuing)</span> <span className="pl-4">2020-2024</span></li>
+                  <li>B.Tech Computer Scinece & Engineering <span className="pl-4">2020-2024</span></li>
                   <p>Modern Institute of Technology & Research Center, Alwar, Rajasthan</p>
                 </div>
               </ul>

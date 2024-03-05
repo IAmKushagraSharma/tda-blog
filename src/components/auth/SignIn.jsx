@@ -17,7 +17,7 @@ const SignIn = ({ handleLoginForm, handleLoginSignup }) => {
 
         const handleOnSubmit = async (e) => {
                 e.preventDefault();
-                login(identifierRef.current.value, passwordRef.current.value);
+                login(identifierRef.current.value.trim(), passwordRef.current.value.trim());
                 navigate('/');
                 handleLoginForm();
                 showAlert('Signed In!');

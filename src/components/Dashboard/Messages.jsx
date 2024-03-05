@@ -35,11 +35,15 @@ const Messages = () => {
     )
   }
 
+    const onSearch = () =>{
+        console.log('on serach')
+    }
+
 
   return (
      <div className='min-h-[80vh] mt-10 w-full ' >
 
-      <div className='w-full flex justify-center py-4'><Search parameter={'messages'} /></div>
+      <div className='w-full flex justify-center py-4'><Search parameter={'messages'} onSearch={onSearch} /></div>
 
       <div className='w-full text-sm md:text-lg flex flex-col items-center justify-center my-10' >
 

@@ -36,11 +36,15 @@ const Users = () => {
     )
   }
 
+    const onSearch = () => {
+        console.log('Dashboard >> Users >> search()');
+     }
+
 
 
   return (
     <div className='min-h-[80vh] mt-10 w-full ' >
-      <div className='w-full flex justify-center py-4'><Search parameter={'users'} /></div>
+      <div className='w-full flex justify-center py-4'><Search parameter={'users'} onSearch={onSearch} /></div>
 
       <div className='w-full text-sm md:text-lg flex flex-col items-center justify-center my-10' >
 

@@ -33,7 +33,7 @@ const ProjectBlogDetails = () => {
       <div className='flex justify-center mt-6'>
         <div className='p-4 w-full md:max-w-[60rem]' >
           <div className='text-2xl font-bold' >{blog.title}</div>
-          <div className='py-2' ><MarkdownRenderer content={blog.body} /></div>
+          <div className='py-2 text-xl' ><MarkdownRenderer content={blog.body} /></div>
         </div>
       </div>
       </div>

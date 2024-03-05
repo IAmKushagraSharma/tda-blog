@@ -43,10 +43,14 @@ const Blog = () => {
       await deleteDoc(doc(db, 'blog', id))
   }
 
+    const onSearch = () =>{
+        console.log('Dashboard >> Blog >> search()')
+    }
+
 
   return (
     <div className='min-h-[80vh] mt-10 w-full ' >
-      <div className='w-full flex justify-center py-4'><Search parameter={'blogs'} /></div>
+      <div className='w-full flex justify-center py-4'><Search parameter={'blogs'} onSearch={onSearch} /></div>
 
       <div className='w-full text-sm md:text-lg flex flex-col items-center justify-center my-10' >
 

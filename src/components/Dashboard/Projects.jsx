@@ -38,14 +38,17 @@ const Projects = () => {
   }
 
   const handleDelete = async (id) =>{
-    await deleteDoc(doc(db, 'projectBlog', id)) 
+    await deleteDoc(doc(db, 'projectBlog', id))
   }
 
+  const onSearch = () =>{
+    console.log('Dashboard >> contact >> serach()')
+  }
 
 
   return (
     <div className='min-h-[80vh] mt-10 w-full ' >
-      <div className='w-full flex justify-center py-4'><Search parameter={'projects'} searchField={'title'} setResults={setProjects} /></div>
+      <div className='w-full flex justify-center py-4'><Search parameter={'projects'} onSearch={onSearch} searchField={'title'} setResults={setProjects} /></div>
 
       <div className='w-full text-sm md:text-lg flex flex-col items-center justify-center my-10' >
 

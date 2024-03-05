@@ -63,7 +63,7 @@ function App() {
             <AppRoutes />
           </div>
           <div className="flex justify-center border-t min-h-10 mt-4 border-stone-500 w-full p-1">
-            Kushagra Is Awesome
+            blah, blah, blah
           </div>
         </div>
       </AlertProvider>
